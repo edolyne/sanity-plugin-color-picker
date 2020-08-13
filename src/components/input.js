@@ -55,8 +55,6 @@ const ColorPreview = styled.div`
 
 const Dropper = styled.button`
   appearance: none;
-  // position: absolute;
-  // top: 0;
   position: absolute;
   top: -92px;
   left: 6px;
@@ -119,12 +117,12 @@ class ColorPicker extends React.Component {
     this._inputElement.focus()
   }
 
-  handlePickerChange(color) {
+  handlePickerChange = (color) => {
     const patch = color.hex === '' ? unset() : set(color.hex)
     this.props.onChange(PatchEvent.from(patch))
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     let color
 
     if (event.target) {
@@ -150,23 +148,23 @@ class ColorPicker extends React.Component {
     this.props.onChange(PatchEvent.from(patch))
   }
 
-  handleEyedropper({ hex }) {
+  handleEyedropper = ({ hex }) => {
     const patch = set(hex)
     this.props.onChange(PatchEvent.from(patch))
   }
 
-  handleClear(event) {
+  handleClear = (event) => {
     event.preventDefault()
     this.props.onChange(PatchEvent.from(unset()))
     this.setState({pickColor: false })
   }
 
-  handleClose(event) {
+  handleClose = (event) => {
     event.preventDefault()
     this.setState({pickColor: false})
   }
 
-  openPicker(event) {
+  openPicker = (event) => {
     event.preventDefault()
     this.setState({ pickColor: !this.state.pickColor })
   }
