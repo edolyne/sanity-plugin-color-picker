@@ -106,15 +106,7 @@ const DropperButton = ({ onClick, customProps : { color }}) => (
   </Dropper>
 )
 
-export default class ColorPicker extends React.Component {
-  static propTypes = {
-    type: PropTypes.shape({
-      title: PropTypes.string
-    }).isRequired,
-    level: PropTypes.number,
-    value: PropTypes.number,
-    onChange: PropTypes.func.isRequired
-  }
+class ColorPicker extends React.Component {
 
   constructor(props) {
     super(props)
@@ -127,12 +119,12 @@ export default class ColorPicker extends React.Component {
     this._inputElement.focus()
   }
 
-  handlePickerChange = (color) => {
+  handlePickerChange(color) {
     const patch = color.hex === '' ? unset() : set(color.hex)
     this.props.onChange(PatchEvent.from(patch))
   }
 
-  handleChange = event => {
+  handleChange(event) {
     let color
 
     if (event.target) {
@@ -158,23 +150,23 @@ export default class ColorPicker extends React.Component {
     this.props.onChange(PatchEvent.from(patch))
   }
 
-  handleEyedropper = ({ hex }) => {
+  handleEyedropper({ hex }) {
     const patch = set(hex)
     this.props.onChange(PatchEvent.from(patch))
   }
 
-  handleClear = (event) => {
+  handleClear(event) {
     event.preventDefault()
     this.props.onChange(PatchEvent.from(unset()))
     this.setState({pickColor: false })
   }
 
-  handleClose = (event) => {
+  handleClose(event) {
     event.preventDefault()
     this.setState({pickColor: false})
   }
 
-  openPicker = (event) => {
+  openPicker(event) {
     event.preventDefault()
     this.setState({ pickColor: !this.state.pickColor })
   }
@@ -219,3 +211,14 @@ export default class ColorPicker extends React.Component {
     )
   }
 }
+
+ColorPicker.propTypes = {
+  type: PropTypes.shape({
+    title: PropTypes.string
+  }).isRequired,
+  level: PropTypes.number,
+  value: PropTypes.number,
+  onChange: PropTypes.func.isRequired
+}
+
+export default ColorPicker;

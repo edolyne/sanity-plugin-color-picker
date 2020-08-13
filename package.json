@@ -12,7 +12,19 @@
   "dependencies": {
     "react-color": "^2.18.1",
     "react-eyedrop": "edolyne/react-eyedrop#feature/crossOrigin",
+    "react-icons": "^3.10.0",
     "rgb2hex": "^0.1.10",
     "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "peerDependencies": {
+    "@sanity/components": "^0.144.0",
+    "@sanity/form-builder": "^0.144.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0"
   }
 }
