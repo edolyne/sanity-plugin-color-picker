@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-color-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A color picker input with eyedropper for Sanity.io",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,12 @@
   },
   "author": "Edolyne Long <hi@edolyne.com>",
   "license": "MIT",
+  "homepage": "https://github.com/edolyne/sanity-plugin-color-picker#readme",
+  "repository": "github:edolyne/sanity-plugin-color-picker",
+  "bugs": {
+    "url" : "https://github.com/owner/project/issues",
+    "email" : "hi@edolyne.com"
+  },
   "dependencies": {
     "react-color": "^2.18.1",
     "react-eyedrop": "edolyne/react-eyedrop#feature/crossOrigin",
