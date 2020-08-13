@@ -1,0 +1,13 @@
+.colorPicker .--mb--color-picker {
+  position: relative !important;
+  width: 100%;
+  box-shadow: none;
+}
+
+.colorPicker .color-picker-header {
+    display: none;
+  }
+
+.colorPicker .color-picker-body {
+    padding: 0;
+  }

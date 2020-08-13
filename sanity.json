@@ -1,0 +1,20 @@
+{
+  "paths": {
+    "source": "./src",
+    "compiled": "./lib"
+  },
+  "parts": [
+    {
+      "implements": "part:@sanity/base/schema-type",
+      "path": "./lib/schema/index.js"
+    },
+    {
+      "name": "part:@sanity/base/components/colorPicker",
+      "description": "React component which provides a color picker input"
+    },
+    {
+      "implements": "part:@sanity/base/components/colorPicker",
+      "path": "./lib/components/input.js"
+    }
+  ]
+}
