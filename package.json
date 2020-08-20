@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "react-color": "^2.18.1",
-    "react-eyedrop": "edolyne/react-eyedrop#feature/crossOrigin",
+    "react-eyedrop": "4.1.4",
     "react-icons": "^3.10.0",
     "rgb2hex": "^0.1.10",
     "styled-components": "^4.4.1"
