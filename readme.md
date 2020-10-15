@@ -1,4 +1,4 @@
-# sanity-plugin-color-picker
+# Color Picker
 
 Color picker with eyedropper tool input for [Sanity](https://sanity.io/) that stores a selected color.
 
