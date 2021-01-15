@@ -6,7 +6,7 @@
   "parts": [
     {
       "implements": "part:@sanity/base/schema-type",
-      "path": "./lib/schema/index.js"
+      "path": "schema/index.js"
     },
     {
       "name": "part:@sanity/base/components/colorPicker",
@@ -14,7 +14,7 @@
     },
     {
       "implements": "part:@sanity/base/components/colorPicker",
-      "path": "./lib/components/input.js"
+      "path": "components/input.js"
     }
   ]
 }
