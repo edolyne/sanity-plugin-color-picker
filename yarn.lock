@@ -2111,9 +2111,10 @@ react-color@^2.18.1:
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
 
-react-eyedrop@edolyne/react-eyedrop#feature/crossOrigin:
-  version "4.1.3"
-  resolved "https://codeload.github.com/edolyne/react-eyedrop/tar.gz/16274c0a93b5a2cc4269f9e3b3d12499f13aeed8"
+react-eyedrop@4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/react-eyedrop/-/react-eyedrop-4.1.4.tgz#f34e4c2cbe14df5040808b1701d991b731fff969"
+  integrity sha512-DLzq7m7yjJVG4RCoXuhBxBZEUW1m1/p37FmS1kJDLXhILgpqPji91Ah2ZUHxTUgqM1u+2KOn5jhZYvA50hetqg==
   dependencies:
     get-canvas-pixel-color "^2.0.0"
     html2canvas "^1.0.0-rc.5"
