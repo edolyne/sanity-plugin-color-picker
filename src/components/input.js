@@ -114,7 +114,9 @@ class ColorPicker extends React.Component {
   }
 
   focus() {
-    this._inputElement.focus()
+    if(this._inputElement) {
+      this._inputElement.focus()
+    }
   }
 
   handlePickerChange = (color) => {
